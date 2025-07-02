@@ -18,7 +18,7 @@ export default function Colaboradores() {
     {
       nome: 'Luiz',
       cargo: 'Dev Fullstack',
-      linkedin: 'https://www.linkedin.com/in/luiz-exemplo',
+      linkedin: 'https://www.linkedin.com/in/luizhenrique-dev/',
       imagem: 'https://github.com/usuario-luiz.png', // 🔄 Substitua com o GitHub real
     },
     {
