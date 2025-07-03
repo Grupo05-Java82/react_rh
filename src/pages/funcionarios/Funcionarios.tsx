@@ -1,55 +1,124 @@
-import React from 'react';
 import FuncionarioCard from '../../components/funcionarios/FuncionarioCard';
 
 
 
 export default function Funcionarios() {
-  const membros = [
-    {
-      nome: 'Carlos Moroni',
-      cargo: 'Desenvolvedor Front-end',    
-      imagem: 'https://github.com/carlosmoronisud.png', // ✅ Sua imagem do GitHub
-    },
-    {
-      nome: 'Bruno',
-      cargo: 'Designer UI/UX',      
-      imagem: 'https://github.com/BrunoAlves-tech.png', // 🔄 Substitua com o GitHub real
-    },
-    {
-      nome: 'Luiz',
-      cargo: 'Dev Fullstack',      
-      imagem: 'https://github.com/usuario-luiz.png', // 🔄 Substitua com o GitHub real
-    },
-    {
-      nome: 'Murilo',
-      cargo: 'Product Owner',    
-      imagem: 'https://github.com/Matttosz.png', // 🔄 Substitua com o GitHub real
-    },
-    {
-      nome: 'Natan',
-      cargo: 'QA Tester',      
-      imagem: 'https://github.com/natanmac.png', // 🔄 Substitua com o GitHub real
-    },
-    {
-      nome: 'Pablo',
-      cargo: 'Scrum Master',      
-      imagem: 'https://github.com/Pablo-Casagrande.png', // 🔄 Substitua com o GitHub real
-    },
-  ];
+const funcionarios = [
+  {
+    nome: 'Lívia Monteiro',
+    cargo: 'Desenvolvedora Front-end',
+    imagem: 'https://randomuser.me/api/portraits/women/21.jpg',
+  },
+  {
+    nome: 'Otávio Fernandes',
+    cargo: 'Designer UI/UX',
+    imagem: 'https://randomuser.me/api/portraits/men/34.jpg',
+  },
+  {
+    nome: 'Sofia Almeida',
+    cargo: 'Gerente de Projetos',
+    imagem: 'https://randomuser.me/api/portraits/women/45.jpg',
+  },
+  {
+    nome: 'Henrique Vasconcelos',
+    cargo: 'Desenvolvedor Back-end',
+    imagem: 'https://randomuser.me/api/portraits/men/56.jpg',
+  },
+  {
+    nome: 'Beatriz Nogueira',
+    cargo: 'Analista de Dados',
+    imagem: 'https://randomuser.me/api/portraits/women/67.jpg',
+  },
+  {
+    nome: 'Rogério Tavares',
+    cargo: 'DevOps Engineer',
+    imagem: 'https://randomuser.me/api/portraits/men/78.jpg',
+  },
+  {
+    nome: 'Natália Prado',
+    cargo: 'Product Owner',
+    imagem: 'https://randomuser.me/api/portraits/women/12.jpg',
+  },
+  {
+    nome: 'Caio Bernardes',
+    cargo: 'QA Tester',
+    imagem: 'https://randomuser.me/api/portraits/men/23.jpg',
+  },
+  {
+    nome: 'Talita Moura',
+    cargo: 'Scrum Master',
+    imagem: 'https://randomuser.me/api/portraits/women/34.jpg',
+  },
+  {
+    nome: 'Diego Farias',
+    cargo: 'Desenvolvedor Full Stack',
+    imagem: 'https://randomuser.me/api/portraits/men/45.jpg',
+  },
+  {
+    nome: 'Jéssica Lopes',
+    cargo: 'Especialista em Segurança',
+    imagem: 'https://randomuser.me/api/portraits/women/56.jpg',
+  },
+  {
+    nome: 'Marcelo Antunes',
+    cargo: 'Engenheiro de Software',
+    imagem: 'https://randomuser.me/api/portraits/men/67.jpg',
+  },
+  {
+    nome: 'Aline Castro',
+    cargo: 'Cientista de Dados',
+    imagem: 'https://randomuser.me/api/portraits/women/78.jpg',
+  },
+  {
+    nome: 'Igor Peixoto',
+    cargo: 'Desenvolvedor Mobile',
+    imagem: 'https://randomuser.me/api/portraits/men/12.jpg',
+  },
+  {
+    nome: 'Vanessa Teixeira',
+    cargo: 'Analista de Sistemas',
+    imagem: 'https://randomuser.me/api/portraits/women/23.jpg',
+  },
+  {
+    nome: 'Murilo Cunha',
+    cargo: 'Arquiteto de Software',
+    imagem: 'https://randomuser.me/api/portraits/men/34.jpg',
+  },
+  {
+    nome: 'Érica Diniz',
+    cargo: 'Especialista em Cloud',
+    imagem: 'https://randomuser.me/api/portraits/women/45.jpg',
+  },
+  {
+    nome: 'Bruno Sanches',
+    cargo: 'Engenheiro de Machine Learning',
+    imagem: 'https://randomuser.me/api/portraits/men/56.jpg',
+  },
+  {
+    nome: 'Paula Rezende',
+    cargo: 'Tech Lead',
+    imagem: 'https://randomuser.me/api/portraits/women/67.jpg',
+  },
+  {
+    nome: 'Leandro Queiroz',
+    cargo: 'Analista de BI',
+    imagem: 'https://randomuser.me/api/portraits/men/78.jpg',
+  },
+];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold text-center text-blue-700 mb-8">
-        Funcionários da empresa
+        Colaboradores da empresa
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-        {membros.map((membro) => (
+        {funcionarios.map((funcionario) => (
           <FuncionarioCard
-            key={membro.nome}
-            nome={membro.nome}
-            cargo={membro.cargo}
-            imagem={membro.imagem}       />
+            key={funcionario.nome}
+            nome={funcionario.nome}
+            cargo={funcionario.cargo}
+            imagem={funcionario.imagem}       />
         ))}
       </div>
     </div>

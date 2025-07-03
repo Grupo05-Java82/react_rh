@@ -1,23 +1,35 @@
-import React from 'react'
 
 function Introducao() {
   return (
-    <div className="text-center mt-10">
-      <h1 className="text-4xl font-bold text-blue-700">Bem-vindo RH Company</h1>
-      <p className="mt-4 text-gray-600">O RH Company é um sistema criado para ajudar empresas a organizar melhor as informações dos seus funcionários. Ele funciona como uma central onde o setor de RH pode:
+    <>
+      <div className="text-center mt-10 flex gap-4 justify-center items-center border border-blue-700 p-4 rounded-lg max-w-8xl mx-auto">
+        <div className="flex flex-col">
+          <h1 className="text-4xl font-bold text-blue-700">Bem-vindo </h1>
+          <h1 className="text-4xl font-bold text-blue-700">RH Human</h1>
+        </div>
+        <p className="mt-8 text-gray-600 mx-4 max-w-xl">O RH Company é um sistema criado para ajudar empresas a organizar melhor as informações dos seus funcionários. Ele funciona como uma central onde o setor de RH pode:</p>
+      </div>
+      <div>
+          <img src="https://blog.ipog.edu.br/wp-content/uploads/2017/06/shutterstock_215609275.jpg" 
+          alt="Imagem de ilustração serviços"
+          width={400}
+          className="rounded-full" />
+      </div>
+    </>
 
-    Cadastrar novos colaboradores
 
-    Consultar quem já trabalha na empresa
+    // Cadastrar novos colaboradores
 
-    Atualizar dados quando algo muda
+    // Consultar quem já trabalha na empresa
 
-    Remover registros, se necessário
+    // Atualizar dados quando algo muda
 
-Tudo isso acontece de forma rápida e organizada, por meio de um sistema chamado de API (que conecta os dados ao sistema principal).
+    // Remover registros, se necessário
 
-Ele foi desenvolvido por uma equipe com 6 pessoas, usando ferramentas modernas, e pode ser usado por empresas que querem facilitar a gestão de seus times.</p>
-    </div>
+    // Tudo isso acontece de forma rápida e organizada, por meio de um sistema chamado de API (que conecta os dados ao sistema principal).
+
+    // Ele foi desenvolvido por uma equipe com 6 pessoas, usando ferramentas modernas, e pode ser usado por empresas que querem facilitar a gestão de seus times.
+    
   )
 }
 
