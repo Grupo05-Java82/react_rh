@@ -7,7 +7,7 @@ interface FuncionarioProps {
 
 export default function FuncionarioCard({ nome, cargo, imagem }: FuncionarioProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-4 w-full max-w-xs hover:shadow-lg transition">
+    <div className="bg-white rounded-2xl shadow-md p-4 w-full max-w-xs hover:shadow-lg transition hover:scale-110 hover:cursor-pointer">
       {imagem ? (
         <img
           src={imagem}

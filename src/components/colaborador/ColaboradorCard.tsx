@@ -8,7 +8,7 @@ interface ColaboradorProps {
 
 export default function ColaboradorCard({ nome, cargo, linkedin, imagem }: ColaboradorProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-4 w-full max-w-xs hover:shadow-lg transition">
+    <div className="bg-white rounded-2xl shadow-md p-4 w-full max-w-xs hover:shadow-lg transition hover:cursor-pointer hover:scale-105">
       {imagem ? (
         <img
           src={imagem}

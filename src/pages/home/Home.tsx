@@ -7,7 +7,7 @@ export default function Home() {
         className="absolute top-0 left-0 w-full h-full object-cover opacity-60 rounded-4xl"
       />
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-5xl md:text-6xl font-bold text-blue-800 drop-shadow-lg">
+        <h1 className="text-5xl md:text-6xl font-bold text-[#002a55] drop-shadow-lg">
           RH Human
         </h1>
       </div>

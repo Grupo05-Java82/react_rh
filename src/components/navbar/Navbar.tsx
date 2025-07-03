@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="bg-blue-600 text-white shadow">
-      <div className="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+    <nav className="bg-[#002a55] text-white shadow">
+      <div className="max-w-7xl mx-auto px-4 py-8 flex justify-between items-center">
         <NavLink to="/" className="text-2xl font-bold">
           RH Human
         </NavLink>
